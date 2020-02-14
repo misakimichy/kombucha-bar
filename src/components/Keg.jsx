@@ -8,7 +8,7 @@ const Keg = props => {
             <p>{props.brand}</p>
             <p>Price: ${props.price}</p>
             <p>Flavor: {props.flavor}</p>
-            <p>Left:{props.brand} /124 pints</p>
+            <p>Left:{props.pints} /124 pints</p>
         </div>
     )
 }

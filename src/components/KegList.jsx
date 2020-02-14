@@ -5,7 +5,7 @@ const KegList = () => {
     const data = [
         {
             name: 'keg name',
-            brand: 'brand',
+            brand: 'brand name',
             price: 100,
             flavor: 'flavor',
             pints: 124
