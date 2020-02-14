@@ -1,35 +1,57 @@
-# React starter with Webpack
+# Kombucha Bar
 
-- install npm
-- Bundle new code with `$ webpack`
-- Then run `npm run start`. This also runs `webpack-dev-server` to compile the project, and launches development server.
-- `localhost:8080` connects to the necessary endpoint
+#### _React: Website for Kombucha Bar, Last Update 02/14/2020_
 
-## Use ESLint
-1. Run the following command:
+## Description
+Create a website for Kombucha bar.
+
+## Kombucha Bar Component and Route Structure
+<img src='./img/screenshot.png' alt='component structure'/>
+
+
+## Application has
+### As Employee
+    - An employee can add a new keg to the list.
+    - An employee can edit an added keg.
+    - An employee can see how many pints are left in a keg.
+    - An employee can update an number of pints when a pint of the keg is sold.
+    - An employee can see the list of kegs with less than 10 pints left.
+    
+
+### As Patron
+    - A patron can see list of kegs includes `name`, `brand`, price` and `flavor`.
+    - A patron can see color-coded kegs based on the price range.
+    - A patron can see the listKe by flavor.
+    - A patron can see how many pints are left in a keg.
+
+## Installation:
+1. Clone this repo:
 ```
-npm install eslint@4.13.1 -g
-npm install eslint@4.13.1 --save-dev
+$ git clone this-repo-url
 ```
 
-2. Then run this command in the top level of project directory:
+2. Install npm:
+
 ```
-eslint --init
+$ npm install
 ```
 
-3. Answer the questions then it automate `.eslintrc.json` file based on the answers.
+3. Run the project:
+```
+$ npm run start 
+```
 
-### ESLint Rules in `.eslintrc.json`: 
-- `0` - off
-- `1` - warn
-- `2` - error
-
-_ESLint for indentation is removed from this template_
-
-- Run `npm run lint` to check the project's lint
-- Run `npm run lint --fix` to check and fix the project's lint
+4. Open up localhost:8080
 
 
+## Known Bugs
+- No known bugs at this time
 
-## React-Router
-React-Router is installed.
+## Support and contact details
+Misaki Koonce: misaki.koonce@gmail.com
+
+## Technologies Used
+Git, GitHub, ReactJS and Webpack
+
+## License
+Copyright © 2020 under the MIT License
