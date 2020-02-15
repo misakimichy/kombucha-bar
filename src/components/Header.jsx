@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
     return(
         <header>
-            <Link to='/'>Kombucha Bar</Link>
+            <Link to='/' className='home-icon'>Kombucha Bar</Link>
             <nav>
                 <Link to='/add-new' className='nav-item'>Add New Keg</Link>        
                 <Link to='/edit' className='nav-item'>Edit Keg</Link>        
@@ -17,12 +17,15 @@ const Header = () => {
                     justify-content: space-between;
                 }
 
+                .home-icon {
+                    margin: 0 auto;
+                }
+
                 nav {
                     width: 30vw;
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
-
                 }
             `}</style>
         </header>
