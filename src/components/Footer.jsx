@@ -16,12 +16,11 @@ const Footer = () => {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    // Option for fixed footer
-                    // background-color: white;
-                    // width: 100%;
-                    // position: fixed;
-                    // bottom: 0;
-                    // left: 0;
+                    background-color: white;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
                 }
                 .header-nav-ul {
                     margin: 0;
