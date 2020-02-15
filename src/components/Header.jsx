@@ -4,27 +4,31 @@ import { Link } from 'react-router-dom'
 const Header = () => {
     return(
         <header>
-            <Link to='/' className='home-icon'>Kombucha Bar</Link>
+            <div className='home-icon'>
+                <Link to='/' style={{ textDecoration: 'none'}}>Kombucha Bar</Link>
+            </div>
             <nav>
-                <Link to='/add-new' className='nav-item'>Add New Keg</Link>        
-                <Link to='/edit' className='nav-item'>Edit Keg</Link>        
-                <Link to='/inventory' className='nav-item'>Inventory</Link>        
+                <Link to='/add-new' style={{ textDecoration: 'none'}} className='nav-item'>Add New Keg</Link>        
+                <Link to='/edit' style={{ textDecoration: 'none'}} className='nav-item'>Edit Keg</Link>        
+                <Link to='/inventory' style={{ textDecoration: 'none'}} className='nav-item'>Inventory</Link>        
             </nav>
             <style jsx>{`
                 header {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    height: 10vh;
                 }
 
                 .home-icon {
-                    margin: 0 auto;
+                    width: 100%;
+                    text-align: center;
                 }
 
                 nav {
-                    width: 30vw;
+                    width: 50%;
                     display: flex;
-                    justify-content: space-evenly;
+                    justify-content: space-around;
                     align-items: center;
                 }
             `}</style>

@@ -1,7 +1,7 @@
 {
-  "name": "kombucha bar",
+  "name": "kombucha-bar",
   "version": "1.0.0",
-  "description": "Kombucha bar website with Webpack with Babel",
+  "description": "Kombucha bar website",
   "main": "webpack.config.js",
   "dependencies": {
     "babel-core": "^6.24.1",

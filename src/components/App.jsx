@@ -10,7 +10,7 @@ import NotFound404 from './NotFound404'
 
 const App = () => {
     return (
-        <div>
+        <div className='component-root'>
             <Header />
             <Switch>
                 <Route exact path='/' component={KegList} />
@@ -20,6 +20,12 @@ const App = () => {
                 <Route component={NotFound404} />
             </Switch>
             <Footer />
+            <style jsx>{`
+                .component-root {
+                    font-family: arial, sans-serif;
+                    font-size: 18px;
+                }
+            `}</style>
         </div>
     )
 }
