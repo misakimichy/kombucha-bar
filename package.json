@@ -1,7 +1,7 @@
 {
-  "name": "react-starter",
+  "name": "kombucha bar",
   "version": "1.0.0",
-  "description": "React starter with Webpack with Babel",
+  "description": "Kombucha bar website with Webpack with Babel",
   "main": "webpack.config.js",
   "dependencies": {
     "babel-core": "^6.24.1",
@@ -37,12 +37,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/misakimichy/react-starter.git"
+    "url": "git+https://github.com/misakimichy/kombucha-bar.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/misakimichy/react-starter/issues"
+    "url": "https://github.com/misakimichy/kombucha-bar/issues"
   },
-  "homepage": "https://github.com/misakimichy/react-starter#readme"
+  "homepage": "https://github.com/misakimichy/kombucha-bar#readme"
 }
