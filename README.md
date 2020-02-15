@@ -6,7 +6,9 @@
 Create a website for Kombucha bar.
 
 ## Kombucha Bar Component and Route Structure
-<img src='./img/screenshot.png' alt='component structure'/>
+<img src='./img/screenshot.png' alt='component structure' />
+
+Designed using [Lucidchart](https://www.lucidchart.com/)
 
 
 ## Application has
@@ -51,7 +53,7 @@ $ npm run start
 Misaki Koonce: misaki.koonce@gmail.com
 
 ## Technologies Used
-Git, GitHub, ReactJS and Webpack
+Git, GitHub, Lucidchart, ReactJS and Webpack
 
 ## License
 Copyright © 2020 under the MIT License
