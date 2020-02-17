@@ -24,7 +24,7 @@ const Footer = () => {
                 }
                 .header-nav-ul {
                     margin: 0;
-                    font-size: 12px;
+                    font-size: 14px;
                 }
             `}</style>
         </footer>

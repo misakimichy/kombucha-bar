@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const Header = () => {
     return(
         <header>
-            <div className='home-icon'>
-                <Link to='/' style={{ textDecoration: 'none'}}>Kombucha Bar</Link>
+            <div className='icon-container'>
+                <h1><Link to='/' style={{ textDecoration: 'none'}}>Kombucha Bar</Link></h1>
             </div>
             <nav>
                 <Link to='/add-new' style={{ textDecoration: 'none'}} className='nav-item'>Add New Keg</Link>        
@@ -20,9 +20,15 @@ const Header = () => {
                     height: 10vh;
                 }
 
-                .home-icon {
+                .icon-container {
                     width: 100%;
                     text-align: center;
+                }
+
+                .icon-container > h1 {
+                    font-size: 36px;
+                    font-weight: 100;
+                    letter-spacing: 1px;
                 }
 
                 nav {
