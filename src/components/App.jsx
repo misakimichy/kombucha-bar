@@ -7,6 +7,7 @@ import NewKeg from './NewKeg'
 import InventoryList from './InventoryList'
 import Footer from './Footer'
 import NotFound404 from './NotFound404'
+import './../styles.css'
 
 const App = () => {
     return (
@@ -20,12 +21,6 @@ const App = () => {
                 <Route component={NotFound404} />
             </Switch>
             <Footer />
-            <style jsx>{`
-                .component-root {
-                    font-family: arial, sans-serif;
-                    font-size: 18px;
-                }
-            `}</style>
         </div>
     )
 }

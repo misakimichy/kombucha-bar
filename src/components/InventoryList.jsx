@@ -23,20 +23,6 @@ const InventoryList = () => {
                     />  
                 )}
             </section>
-            <style jsx>{`
-                main {
-                    height: 100vh;
-                }
-                
-                .keg-container {
-                    width: 80%;
-                    margin: 0 auto;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-
-                }
-            `}</style>
         </main>
     )
 }

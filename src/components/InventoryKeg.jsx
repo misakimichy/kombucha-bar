@@ -7,16 +7,6 @@ const Keg = props => {
             <h2>{props.name}</h2>
             <p>{props.brand}</p>
             <p>Left: {props.pints} /124 pints</p>
-            <style>{`
-                .keg-card {
-                    border: 1px solid #efefef;
-                    border-radius: 4px;
-                    min-width: 200px;
-                    text-align: center;
-                    padding: 2em;
-                    margin-bottom: 2em;
-                }
-            `}</style>
         </section>
     )
 }
