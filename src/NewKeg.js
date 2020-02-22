@@ -1,18 +1,77 @@
-import React from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Redirect } from 'react-router-dom'
 
-const NewKeg = () => {
-    return(
-        <main>
-            <h1>Add New Keg</h1>
-            <form>
-                <input type='text' id='kegName' name='kegName' placeholder='Keg Name' />
-                <input type='text' id='kegBrand' name='kegBrand' placeholder='Keg Brand' />
-                <input type='text' id='kegPrice' name='kegPrice' placeholder='Price($)' />
-                <input type='text' id='kegFlavor' name='kegFlavor' placeholder='Flavor'/>
-                <button type='submit'>Add Keg</button>
-            </form>
-        </main>
-    )
+class NewKeg extends Component {
+    state = {
+        toHome: false
+    }
+    _name = React.createRef()
+    _brand = React.createRef()
+    _price = React.createRef()
+    _flavor = React.createRef()
+
+    handleNewForm = event => {
+        event.preventDefault()
+        this.props.onAddNewKeg({
+            name: this._name.value,
+            brand: this._brand.value,
+            price: parseInt(this._price.value),
+            flavor: this._flavor.value,
+            pints: 124
+        })
+
+        this.setState({
+            toHome: true
+        })
+    }
+
+    render() {
+        const { toHome } = this.state
+        if(toHome) return <Redirect to ='/' />
+
+        return(
+            <main>
+                <h1>Add New Keg</h1>
+                <form onSubmit={this.handleNewForm}>
+                    <input
+                        id='kegName'
+                        name='kegName'
+                        type='text'
+                        placeholder='Keg Name'
+                        ref={input => {this._name = input}}
+                    />
+                    <input
+                        id='kegBrand'
+                        name='kegBrand'
+                        type='text'
+                        placeholder='Keg Brand'
+                        ref={input => {this._brand = input}}
+                    />
+                    <input
+                        id='kegPrice'
+                        name='kegPrice'
+                        type='number'
+                        min='0'
+                        placeholder='Price($)'
+                        ref={input => {this._price = input}}
+                    />
+                    <input
+                        id='kegFlavor'
+                        name='kegFlavor'
+                        type='text'
+                        placeholder='Flavor'
+                        ref={input => {this._flavor = input}}
+                    />
+                    <button type='submit'>Add Keg</button>
+                </form>
+            </main>
+        )
+    }
+}
+
+NewKeg.propTypes = {
+    onAddNewKeg: PropTypes.func
 }
 
 export default NewKeg
