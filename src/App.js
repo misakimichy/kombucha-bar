@@ -7,7 +7,7 @@ import NewKeg from './NewKeg'
 import InventoryList from './InventoryList'
 import Footer from './Footer'
 import NotFound404 from './NotFound404'
-import './../styles.css'
+import './App.css'
 
 const App = () => {
     return (

@@ -1,50 +1,35 @@
 {
   "name": "kombucha-bar",
-  "version": "1.0.0",
-  "description": "Kombucha bar website",
-  "main": "webpack.config.js",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "html-webpack-plugin": "^2.29.0",
-    "prop-types": "^15.5.10",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-hot-loader": "^3.0.0-beta.7",
-    "react-router-dom": "^4.0.0",
-    "styled-jsx": "^3.2.4",
-    "webpack": "^3.4.0",
-    "webpack-dev-server": "^2.5.0"
-  },
-  "devDependencies": {
-    "css-loader": "^3.4.2",
-    "eslint": "^4.13.1",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-loader": "^3.0.3",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "file-loader": "^1.1.6",
-    "style-loader": "^1.1.3",
-    "url-loader": "^0.6.2"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
-    "lint": "eslint src/** src/**/**; exit 0",
-    "lint-fix": "eslint src/** src/**/** --fix; exit 0"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/misakimichy/kombucha-bar.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/misakimichy/kombucha-bar/issues"
-  },
-  "homepage": "https://github.com/misakimichy/kombucha-bar#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
