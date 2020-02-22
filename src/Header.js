@@ -9,7 +9,6 @@ const Header = () => {
             </div>
             <nav>
                 <Link to='/add-new' style={{ textDecoration: 'none'}} className='nav-item'>Add New Keg</Link>        
-                <Link to='/edit' style={{ textDecoration: 'none'}} className='nav-item'>Edit Keg</Link>        
                 <Link to='/inventory' style={{ textDecoration: 'none'}} className='nav-item'>Inventory</Link>        
             </nav>
         </header>

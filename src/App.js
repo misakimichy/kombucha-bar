@@ -37,7 +37,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path='/' render={() => <KegList kegList={kegList}/>} />
                     <Route exact path='/add-new' render={() => <NewKeg onAddNewKeg={this.handleAddNewKeg} />} />
-                    <Route exact path='/edit' component={EditKeg} />
+                    <Route exact path='/edit' render={props => <EditKeg {...props} />} />
                     <Route exact path='/inventory' component={InventoryList} />
                     <Route component={NotFound404} />
                 </Switch>
