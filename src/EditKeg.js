@@ -1,17 +1,33 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+import { Redirect } from 'react-router-dom'
 
 class EditKeg extends Component {
     state = {
         toHome: false
     }
+    _name = React.createRef()
+    _brand = React.createRef()
+    _price = React.createRef()
+    _flavor = React.createRef()
 
-    handleEditForm = event => {
+    handleEditForm = (id, event) => {
         event.preventDefault()
-        // this.props.onAddNewKeg
+        this.props.onEditKeg(id, {
+            name: this._name.value,
+            brand: this._brand.value,
+            price: parseInt(this._price.value),
+            flavor: this._flavor.value,
+            pints: 124
+        })
+        this.setState({
+            toHome: true
+        })
     }
 
     render() {
+        const { toHome } = this.state
+        if(toHome) return <Redirect to ='/' />
         return(
             <main>
                 <h1>Edit Keg</h1>
@@ -52,10 +68,12 @@ class EditKeg extends Component {
     }
 }
 
-EditKeg.propTypes = {
-    name: PropTypes.string,
-    brand: PropTypes.string,
-    price: PropTypes.number,
-    flavor: PropTypes.string,
-}
+// EditKeg.propTypes = {
+//     id: PropTypes.string.isRequired,
+//     name: PropTypes.string.isRequired,
+//     brand: PropTypes.string.isRequired,
+//     price: PropTypes.number.isRequired,
+//     flavor: PropTypes.string.isRequired,
+//     onEditKeg: PropTypes.func.isRequired
+// }
 export default EditKeg

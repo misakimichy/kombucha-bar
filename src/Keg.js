@@ -10,11 +10,11 @@ const Keg = props => {
             <p>Price: ${props.price}</p>
             <p>Flavor: {props.flavor}</p>
             <p>{props.pints} /124 pints</p>
-            {console.log('keg component', props)}
             <Link
                 to={{
                     pathname: '/edit',
                     state:{
+                        id: props.kegId,
                         name: props.name,
                         brand: props.brand,
                         price: props.price,
@@ -29,6 +29,7 @@ const Keg = props => {
 }
 
 Keg.propTypes = {
+    kegId: PropTypes.string,
     name: PropTypes.string,
     brand: PropTypes.string,
     price: PropTypes.number,

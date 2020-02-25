@@ -23,10 +23,19 @@ class App extends Component {
         const newKegList = Object.assign({}, this.state.kegList, {
             [kegId]: newKeg
         })
-        console.log(newKegList)
         this.setState({
             kegList: newKegList
         })
+    }
+
+    handleEditInfo = (id, editedKeg) => {
+        const thisKeg = Object.keys(this.state.kegList).find(kegId => kegId === id)
+        const newKeg = Object.assign({}, this.state.kegList, {
+            [thisKeg]: editedKeg
+        })
+        this.setState(({
+            [thisKeg]: newKeg
+        }))
     }
 
     render() {
@@ -37,7 +46,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path='/' render={() => <KegList kegList={kegList}/>} />
                     <Route exact path='/add-new' render={() => <NewKeg onAddNewKeg={this.handleAddNewKeg} />} />
-                    <Route exact path='/edit' render={props => <EditKeg {...props} />} />
+                    <Route exact path='/edit' render={props => <EditKeg onEditKeg={this.handleEditInfo} {...props} />} />
                     <Route exact path='/inventory' component={InventoryList} />
                     <Route component={NotFound404} />
                 </Switch>

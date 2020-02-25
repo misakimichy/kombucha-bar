@@ -17,6 +17,7 @@ const KegList = props => {
                     return (
                         <Keg 
                             key={kegId}
+                            kegId={kegId}
                             name={keg.name}
                             brand={keg.brand}
                             price={keg.price}

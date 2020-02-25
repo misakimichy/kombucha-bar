@@ -20,7 +20,6 @@ class NewKeg extends Component {
             flavor: this._flavor.value,
             pints: 124
         })
-
         this.setState({
             toHome: true
         })
