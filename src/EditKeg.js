@@ -67,12 +67,12 @@ class EditKeg extends Component {
     }
 }
 
-// EditKeg.propTypes = {
-//     id: PropTypes.string.isRequired,
-//     name: PropTypes.string.isRequired,
-//     brand: PropTypes.string.isRequired,
-//     price: PropTypes.number.isRequired,
-//     flavor: PropTypes.string.isRequired,
-//     onEditKeg: PropTypes.func.isRequired
-// }
+EditKeg.propTypes = {
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    brand: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    flavor: PropTypes.string.isRequired,
+    onEditKeg: PropTypes.func.isRequired
+}
 export default EditKeg
