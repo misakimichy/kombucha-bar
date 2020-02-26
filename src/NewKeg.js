@@ -13,6 +13,7 @@ class NewKeg extends Component {
 
     handleNewForm = event => {
         event.preventDefault()
+        console.log("New keg: ", this);
         this.props.onAddNewKeg({
             name: this._name.value,
             brand: this._brand.value,

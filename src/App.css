@@ -62,7 +62,7 @@ header {
 }
 
 nav {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -162,6 +162,7 @@ h1, p {
 
 .link {
   margin: 0 auto;
+  width: 100%;
 }
 
 main div div {

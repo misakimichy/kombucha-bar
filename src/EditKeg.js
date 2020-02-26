@@ -11,8 +11,7 @@ class EditKeg extends Component {
     _price = React.createRef()
     _flavor = React.createRef()
 
-    handleEditForm = (id, event) => {
-        event.preventDefault()
+    handleEditForm = id => {
         this.props.onEditKeg(id, {
             name: this._name.value,
             brand: this._brand.value,
