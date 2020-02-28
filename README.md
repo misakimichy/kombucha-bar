@@ -1,6 +1,6 @@
 # Kombucha Bar
 
-#### _React: Website for Kombucha Bar, Last Update 02/24/2020_
+#### _React: Website for Kombucha Bar, Last Update 02/26/2020_
 
 ## Description
 Create a website for Kombucha bar.
@@ -43,7 +43,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Known Bugs
-- When a user edit the keg info, the property name is going to be undefined.
+- No known bugs
 
 ## Currently working on
 `/inventory` route
